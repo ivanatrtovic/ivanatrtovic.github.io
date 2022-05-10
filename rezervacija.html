@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding planer</title>
+    <link rel="stylesheet" href="style4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navigacija">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                                <img src="logo.PNG" alt="logo" class="logo">
+                            <div class="naslov">
+                                    Vaše venčanje iz snova
+                            </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item nn">
+                            <a href="#" class="nav-link" style="color: white;"></a>
+                        </li>
+                        <li class="nav-item nn">
+                            <a href="registracija.html" class="nav-link" style="color: white;">
+                                Registracija
+                            </a>
+                        </li>
+                        <li class="nav-item nn">
+                            <a href="login.html" class="nav-link" style="color: white;">
+                                Login
+                             </a>
+                        </li>
+                        <li class="nav-item nn">
+                            <a href="profil.html" class="nav-link" style="color: #FAC7DF;">
+                                <img src="user.png" style="height: 50px; width: 50px;">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>           
+        </div>
+        <div class="row" style="height: 585px;">
+            <div class="col-sm-3 levo">
+                <div class="levo">
+                    
+                </div>
+            </div>
+            
+            <div class="col-sm-9">
+                <div class="centar">
+                    <div style="text-align: center; justify-content: center;">
+                        <h1>
+                            Restoran Talija
+                        </h1>
+                        <br>
+                        <form>
+                            <table style="margin-left: 35%;   border-collapse: separate;
+                            border-spacing: 15px;">
+                                <tr>
+                                    <td style="text-align: left;">Datum:</td>
+                                    <td style="text-align: right;"><input type="date"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Broj racuna:</td>
+                                    <td style="text-align: right;"><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Broj kartice:</td>
+                                    <td style="text-align: right;"> <input type="password"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;" colspan="2"><button class="btn btn-primary">Rezerviši</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;" colspan="2">
+                                        Niste ulogovani? <a href="login.html"><b><i>Ulogujte se</i></b></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <div class="row" style="font-size: 5px;">&nbsp;</div>
+        <div class="row">
+            <div class="col-sm-12 text-center futer">
+                Copyright <img src="copy.png" class="slikaFuter">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
